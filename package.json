@@ -1,0 +1,35 @@
+{
+  "name": "tech-challenge-api",
+  "version": "1.0.0",
+  "description": "`docker run -d -e MYSQL_ROOT_PASSWORD=password1234 -e MYSQL_DATABASE=app_db -p 3306:3306 --name app-mysql mysql:5`",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "startDev": "sequelize db:migrate && nodemon",
+    "start": "sequelize db:migrate && node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uttam92477/tech-challenge-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Uttam92477/tech-challenge-api/issues"
+  },
+  "homepage": "https://github.com/Uttam92477/tech-challenge-api#readme"
+}
